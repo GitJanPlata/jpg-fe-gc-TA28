@@ -2,20 +2,27 @@
 
 class Program
 {
-    static void Main(string[] args)
-    {
-        Pelicula pelicula = new Pelicula("Matrix", 120, 16, "Lana Wachowski");
-        Cine cine = new Cine(pelicula, 10.0);
+ 
+        static Random rnd = new Random();
 
-        Random rand = new Random();
-        for (int i = 0; i < 50; i++)
+        static void Main(string[] args)
         {
-            string nombre = $"Espectador_{i + 1}";
-            int edad = rand.Next(5, 70);
-            double dinero = rand.NextDouble() * 20;
-            Espectador espectador = new Espectador(nombre, edad, dinero);
+            Pelicula pelicula = new Pelicula("El gran show", 120, 12, "P.T. Barnum");
+            Cine cine = new Cine(pelicula, 10);
 
-            cine.SentarEspectador(espectador);
+            for (int i = 0; i < 50; i++)
+            {
+                Espectador espectador = GenerarEspectador();
+                cine.IntentarSentar(espectador);
+            }
         }
-    }
+
+        static Espectador GenerarEspectador()
+        {
+            string nombre = $"Espectador {rnd.Next(1, 101)}";
+            int edad = rnd.Next(5, 80);
+            double dinero = rnd.Next(5, 20);
+
+            return new Espectador(nombre, edad, dinero);
+        }
 }

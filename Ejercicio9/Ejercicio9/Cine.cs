@@ -6,49 +6,57 @@ using System.Threading.Tasks;
 
 namespace Ejercicio9
 {
-    using System;
 
     public class Cine
     {
-        public Pelicula Pelicula { get; set; }
-        public double PrecioEntrada { get; set; }
-        public Asiento[,] Asientos { get; private set; }
+        private const int FILAS = 8;
+        private const int COLUMNAS = 9;
+        private Asiento[,] asientos = new Asiento[FILAS, COLUMNAS];
+
+        public Pelicula PeliculaActual { get; set; }
+        public double PrecioEntrada { get; private set; }
 
         public Cine(Pelicula pelicula, double precioEntrada)
         {
-            Pelicula = pelicula;
+            PeliculaActual = pelicula;
             PrecioEntrada = precioEntrada;
-            Asientos = new Asiento[8, 9];
 
-            for (int i = 0; i < 8; i++)
+            InicializarAsientos();
+        }
+
+        private void InicializarAsientos()
+        {
+            for (int fila = 0; fila < FILAS; fila++)
             {
-                for (int j = 0; j < 9; j++)
+                for (int columna = 0; columna < COLUMNAS; columna++)
                 {
-                    Asientos[i, j] = new Asiento(8 - i, (char)('A' + j));
+                    char letraColumna = (char)('A' + columna);
+                    asientos[fila, columna] = new Asiento($"{FILAS - fila} {letraColumna}");
                 }
             }
         }
 
-        public bool SentarEspectador(Espectador espectador)
+        public bool IntentarSentar(Espectador espectador)
         {
-            if (espectador.Dinero < PrecioEntrada || espectador.Edad < Pelicula.EdadMinima)
-            {
+            // Revisar si cumple con las condiciones para entrar al cine
+            if (espectador.Edad < PeliculaActual.EdadMinima || espectador.Dinero < PrecioEntrada)
                 return false;
-            }
 
-            Random rand = new Random();
-            while (true)
+            // Buscar asiento libre
+            for (int fila = 0; fila < FILAS; fila++)
             {
-                int fila = rand.Next(0, 8);
-                int columna = rand.Next(0, 9);
-
-                if (!Asientos[fila, columna].Ocupado)
+                for (int columna = 0; columna < COLUMNAS; columna++)
                 {
-                    Asientos[fila, columna].Ocupado = true;
-                    espectador.Dinero -= PrecioEntrada;
-                    return true;
+                    if (!asientos[fila, columna].Ocupado)
+                    {
+                        asientos[fila, columna].Ocupado = true;
+                        Console.WriteLine($"El {espectador.Nombre} se ha sentado en el asiento {asientos[fila, columna].Identificador}");
+                        espectador.Pagar(PrecioEntrada);
+                        return true;
+                    }
                 }
             }
+            return false;
         }
     }
 

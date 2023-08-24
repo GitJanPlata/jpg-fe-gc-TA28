@@ -42,7 +42,7 @@ public class Password
     public void SetLongitud(int longitud)
     {
         this.longitud = longitud;
-        this.contraseña = generarPassword();  // Regenera la contraseña al cambiar la longitud
+        this.contraseña = generarPassword(); 
     }
 }
 
@@ -70,5 +70,5 @@ public class TestPassword
         {
             Console.WriteLine($"{passwords[i].GetContraseña()} {esFuerteArray[i]}");
         }
-    }s
+    }
 }

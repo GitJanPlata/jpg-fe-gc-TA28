@@ -8,9 +8,9 @@ namespace Ejercicio9
 {
     public class Espectador
     {
-        public string Nombre { get; set; }
-        public int Edad { get; set; }
-        public double Dinero { get; set; }
+        public string Nombre { get; private set; }
+        public int Edad { get; private set; }
+        public double Dinero { get; private set; }
 
         public Espectador(string nombre, int edad, double dinero)
         {
@@ -18,6 +18,16 @@ namespace Ejercicio9
             Edad = edad;
             Dinero = dinero;
         }
+        public bool Pagar(double cantidad)
+        {
+            if (Dinero >= cantidad)
+            {
+                Dinero -= cantidad;
+                return true;
+            }
+            return false;
+        }
     }
+
 
 }

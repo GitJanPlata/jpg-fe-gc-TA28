@@ -8,20 +8,13 @@ namespace Ejercicio9
 {
     public class Asiento
     {
-        public int Fila { get; set; }
-        public char Columna { get; set; }
+        public string Identificador { get; private set; }
         public bool Ocupado { get; set; }
 
-        public Asiento(int fila, char columna)
+        public Asiento(string identificador)
         {
-            Fila = fila;
-            Columna = columna;
+            Identificador = identificador;
             Ocupado = false;
-        }
-
-        public override string ToString()
-        {
-            return $"{Fila}{Columna}";
         }
     }
 

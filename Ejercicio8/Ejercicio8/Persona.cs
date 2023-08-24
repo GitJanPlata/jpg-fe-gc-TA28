@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Ejercicio8
 {
+    public enum Sexo { Masculino, Femenino };
+    public enum Materia { Matematicas, Filosofia, Fisica };
+
     public class Persona
     {
         public string Nombre { get; set; }
@@ -17,6 +20,11 @@ namespace Ejercicio8
             Nombre = nombre;
             Edad = edad;
             Sexo = sexo;
+        }
+
+        public virtual bool EstaDisponible()
+        {
+            return true; // Por defecto, una persona está disponible.
         }
     }
 
@@ -30,9 +38,9 @@ namespace Ejercicio8
             Calificacion = calificacion;
         }
 
-        public bool EstaPresente()
+        public override bool EstaDisponible()
         {
-            return new Random().NextDouble() > 0.5;
+            return new Random().NextDouble() > 0.5; // 50% de hacer novillos.
         }
     }
 
@@ -46,10 +54,10 @@ namespace Ejercicio8
             Materia = materia;
         }
 
-        public bool EstaDisponible()
+        public override bool EstaDisponible()
         {
-            return new Random().NextDouble() > 0.2;
+            return new Random().NextDouble() > 0.2; // 20% de no estar disponible.
         }
-    }
 
+    }
 }

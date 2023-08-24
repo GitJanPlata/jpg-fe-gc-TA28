@@ -8,10 +8,10 @@ namespace Ejercicio9
 {
     public class Pelicula
     {
-        public string Titulo { get; set; }
-        public int Duracion { get; set; } // en minutos
-        public int EdadMinima { get; set; }
-        public string Director { get; set; }
+        public string Titulo { get; private set; }
+        public int Duracion { get; private set; } 
+        public int EdadMinima { get; private set; }
+        public string Director { get; private set; }
 
         public Pelicula(string titulo, int duracion, int edadMinima, string director)
         {

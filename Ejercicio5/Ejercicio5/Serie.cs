@@ -64,5 +64,6 @@ namespace Ejercicio5
             Serie serie = (Serie)a;
             return numeroTemporadas.CompareTo(serie.GetNumeroTemporadas());
         }
+
     }
 }

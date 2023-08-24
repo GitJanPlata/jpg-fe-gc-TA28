@@ -171,7 +171,6 @@ public class Program
     {
         Electrodomestico[] electrodomesticos = new Electrodomestico[10];
 
-        // Ejemplo: Rellenamos el array con algunos electrodomésticos
         electrodomesticos[0] = new Electrodomestico(200, 60, "rojo", 'C');
         electrodomesticos[1] = new Lavadora(300, 50, "blanco", 'A', 40);
         electrodomesticos[2] = new Television(400, 70, "negro", 'B', 45, true);
@@ -197,8 +196,8 @@ public class Program
             }
         }
 
-        Console.WriteLine($"Total Electrodomésticos: {precioTotalElectrodomesticos}€");
-        Console.WriteLine($"Total Lavadoras: {precioTotalLavadoras}€");
-        Console.WriteLine($"Total Televisores: {precioTotalTelevisores}€");
+        Console.WriteLine($"Total Electrodomésticos: {precioTotalElectrodomesticos} euros");
+        Console.WriteLine($"Total Lavadoras: {precioTotalLavadoras} euros");
+        Console.WriteLine($"Total Televisores: {precioTotalTelevisores} euros");
     }
 }

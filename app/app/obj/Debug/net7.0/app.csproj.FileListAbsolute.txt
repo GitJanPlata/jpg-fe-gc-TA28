@@ -1,0 +1,15 @@
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\bin\Debug\net7.0\app.exe
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\bin\Debug\net7.0\app.deps.json
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\bin\Debug\net7.0\app.runtimeconfig.json
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\bin\Debug\net7.0\app.dll
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\bin\Debug\net7.0\app.pdb
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\obj\Debug\net7.0\app.csproj.AssemblyReference.cache
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\obj\Debug\net7.0\app.GeneratedMSBuildEditorConfig.editorconfig
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\obj\Debug\net7.0\app.AssemblyInfoInputs.cache
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\obj\Debug\net7.0\app.AssemblyInfo.cs
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\obj\Debug\net7.0\app.csproj.CoreCompileInputs.cache
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\obj\Debug\net7.0\app.dll
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\obj\Debug\net7.0\refint\app.dll
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\obj\Debug\net7.0\app.pdb
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\obj\Debug\net7.0\app.genruntimeconfig.cache
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\app\app\obj\Debug\net7.0\ref\app.dll

@@ -6,8 +6,8 @@ namespace Ejercicio5
     {
         static void Main(string[] args)
         {
-            Serie[] series = new Serie[5];
-            Videojuego[] videojuegos = new Videojuego[5];
+            Serie[] series = new Serie[2];
+            Videojuego[] videojuegos = new Videojuego[2];
 
             series[0] = new Serie("Stranger Things", 3, "Misterio", "Duffer Brothers");
             series[1] = new Serie("The Witcher", 2, "Fantasía", "Lauren Schmidt Hissrich");
@@ -22,7 +22,7 @@ namespace Ejercicio5
             int entregadosV = 0;
             foreach (var s in series)
             {
-                if (s.isEntregado())
+                if (s != null && s.isEntregado())
                 {
                     s.devolver();
                     entregadosS++;
@@ -31,13 +31,51 @@ namespace Ejercicio5
 
             foreach (var v in videojuegos)
             {
-                if (v.isEntregado())
+                if (v != null && v.isEntregado())  
                 {
                     v.devolver();
                     entregadosV++;
                 }
             }
+            Videojuego juegoConMasHoras = null;
+            Serie serieConMasTemporadas = null;
 
+            // Encontrar el videojuego con más horas
+            foreach (var v in videojuegos)
+            {
+                if (v != null && (juegoConMasHoras == null || v.GetHorasEstimadas() > juegoConMasHoras.GetHorasEstimadas()))
+                {
+                    juegoConMasHoras = v;
+                }
+            }
+
+            // Encontrar la serie con más temporadas
+            foreach (var s in series)
+            {
+                if (s != null && (serieConMasTemporadas == null || s.GetNumeroTemporadas() > serieConMasTemporadas.GetNumeroTemporadas()))
+                {
+                    serieConMasTemporadas = s;
+                }
+            }
+
+            // Mostrar los resultados
+            if (juegoConMasHoras != null)
+            {
+                Console.WriteLine($"Videojuego con más horas estimadas:\n{juegoConMasHoras.ToString()}");
+            }
+            else
+            {
+                Console.WriteLine("No se encontró ningún videojuego.");
+            }
+
+            if (serieConMasTemporadas != null)
+            {
+                Console.WriteLine($"Serie con más temporadas:\n{serieConMasTemporadas.ToString()}");
+            }
+            else
+            {
+                Console.WriteLine("No se encontró ninguna serie.");
+            }
             Console.WriteLine($"Total juegos entregados: {entregadosV}");
             Console.WriteLine($"Total series entregadas: {entregadosS}");
         }

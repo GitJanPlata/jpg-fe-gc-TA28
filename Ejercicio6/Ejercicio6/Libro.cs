@@ -33,7 +33,7 @@ namespace Ejercicio6
 
         public override string ToString()
         {
-            return $"El libro con ISBN {ISBN} creado por el autor {autor} tiene {numeroPaginas} páginas";
+            return $"El libro {titulo} con ISBN {ISBN} creado por el autor {autor} tiene {numeroPaginas} páginas";
         }
     }
 

@@ -18,8 +18,7 @@ public class Cuenta
         }
     }
 
-    public Cuenta(string titular) : this(titular, 0) { } // Llamada al otro constructor
-
+    public Cuenta(string titular) : this(titular, 0) { } 
 
     public string Titular
     {

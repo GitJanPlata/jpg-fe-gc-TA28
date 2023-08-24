@@ -1,0 +1,15 @@
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\bin\Debug\net7.0\Ejercicio5.exe
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\bin\Debug\net7.0\Ejercicio5.deps.json
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\bin\Debug\net7.0\Ejercicio5.runtimeconfig.json
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\bin\Debug\net7.0\Ejercicio5.dll
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\bin\Debug\net7.0\Ejercicio5.pdb
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\obj\Debug\net7.0\Ejercicio5.csproj.AssemblyReference.cache
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\obj\Debug\net7.0\Ejercicio5.GeneratedMSBuildEditorConfig.editorconfig
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\obj\Debug\net7.0\Ejercicio5.AssemblyInfoInputs.cache
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\obj\Debug\net7.0\Ejercicio5.AssemblyInfo.cs
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\obj\Debug\net7.0\Ejercicio5.csproj.CoreCompileInputs.cache
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\obj\Debug\net7.0\Ejercicio5.dll
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\obj\Debug\net7.0\refint\Ejercicio5.dll
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\obj\Debug\net7.0\Ejercicio5.pdb
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\obj\Debug\net7.0\Ejercicio5.genruntimeconfig.cache
+E:\bootcamp\BACKEND\jpg-fe-gc-TA28\Ejercicio5\Ejercicio5\obj\Debug\net7.0\ref\Ejercicio5.dll

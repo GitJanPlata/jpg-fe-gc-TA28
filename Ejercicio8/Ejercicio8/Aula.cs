@@ -28,12 +28,7 @@ namespace Ejercicio8
             if (Profesor == null || !Profesor.EstaDisponible() || Profesor.Materia != MateriaAula)
                 return false;
 
-            int contadorPresentes = 0;
-            foreach (var estudiante in Estudiantes)
-            {
-                if (estudiante.EstaPresente())
-                    contadorPresentes++;
-            }
+            int contadorPresentes = Estudiantes.Count(e => e.EstaDisponible());
 
             return contadorPresentes > (MaximoEstudiantes / 2);
         }
@@ -49,8 +44,11 @@ namespace Ejercicio8
             int aprobadosMasculino = 0;
             int aprobadosFemenino = 0;
 
+            Console.WriteLine("Información de los estudiantes:");
             foreach (var estudiante in Estudiantes)
             {
+                Console.WriteLine($"Nombre: {estudiante.Nombre}, Edad: {estudiante.Edad}, Sexo: {estudiante.Sexo}, Calificación: {estudiante.Calificacion}, Presente: {(estudiante.EstaDisponible() ? "Sí" : "No")}");
+
                 if (estudiante.Calificacion >= 5)
                 {
                     if (estudiante.Sexo == Sexo.Masculino)
