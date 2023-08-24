@@ -1,5 +1,4 @@
-![89c79ec75c91e6db86e7f36c8139ea1f](https://github.com/GitJanPlata/jpg-fe-gc-TA28/assets/96839905/ae908ef0-3f83-4ffc-9cb6-c8deeb4bb034)# jpg-fe-gc-TA28
-
+# jpg-fe-gc-TA28
 ## Ejercicios sobre Herencia y POO (2)
 
 ### Ejercicio 1
